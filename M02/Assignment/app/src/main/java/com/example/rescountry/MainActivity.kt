@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.rescountry.models.OceaniaCountry
+import com.example.rescountry.models.OceaniaCountryList
 
 
 import com.example.rescountry.retrofeit.OceaniaCountriesReceiver
@@ -18,10 +19,10 @@ import retrofit2.Response
 
 
 class MainActivity : AppCompatActivity(),
-    Callback<OceaniaCountry> {
+    Callback<List<OceaniaCountryList>> {
     override fun onResponse(
-        call: Call<OceaniaCountry>,
-        response: Response<OceaniaCountry>
+        call: Call<List<OceaniaCountryList>>,
+        response: Response<List<OceaniaCountryList>>
     ) {
         if (response.isSuccessful) {
             val oceaniaCountryList = response.body()
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity(),
         }
     }
 
-    override fun onFailure(call: Call<OceaniaCountry>, t: Throwable) {
+    override fun onFailure(call: Call<List<OceaniaCountryList>>, t: Throwable) {
         t.printStackTrace()
         val response = "faliure; ${t.printStackTrace()}"
 
