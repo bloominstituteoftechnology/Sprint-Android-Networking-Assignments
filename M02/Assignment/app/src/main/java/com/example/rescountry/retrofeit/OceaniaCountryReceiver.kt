@@ -12,7 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class OceaniaCountriesReceiver {
 
-       val BASE_URL = "https://restcountries.eu/rest/v2/regionalbloc/"
+       val BASE_URL = "https://restcountries.eu/rest/v2/"
 
 
 
