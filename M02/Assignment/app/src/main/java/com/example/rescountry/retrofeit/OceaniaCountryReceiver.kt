@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class OceaniaCountriesReceiver {
     companion object{
-        const val BASE_URL = "https://restcountries.eu/rest/v2/"
+        const val BASE_URL = "https://restcountries.eu/rest/v2/regionalbloc/"
     }
 
 

@@ -10,6 +10,7 @@ import com.example.rescountry.retrofeit.OceaniaCountriesReceiver
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 
+
 import retrofit2.Callback
 
 
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity(),
             countriesTextView.text = oceaniaCountryList.toString() // use "oceaniaCountryList" to populate this TextView
         } else {
             val response = "response not successful; ${response.errorBody().toString()}"
+
             Toast.makeText(this@MainActivity, response, Toast.LENGTH_SHORT).show()
         }
     }
@@ -34,6 +36,8 @@ class MainActivity : AppCompatActivity(),
     override fun onFailure(call: Call<OceaniaCountry>, t: Throwable) {
         t.printStackTrace()
         val response = "faliure; ${t.printStackTrace()}"
+
+
 
         Toast.makeText(this@MainActivity, response, Toast.LENGTH_LONG ).show()
     }

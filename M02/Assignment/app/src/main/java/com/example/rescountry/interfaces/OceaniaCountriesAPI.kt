@@ -5,6 +5,7 @@ package com.example.rescountry.interfaces
 import com.example.rescountry.models.OceaniaCountry
 import retrofit2.Call
 
+
 import retrofit2.http.GET
 
 
@@ -14,7 +15,7 @@ interface OceaniaCountriesAPI {
 
     //TODO 5 get the last position of the url
 
-    @GET("<https://restcountries.eu/rest/v2/regionalbloc/eu>")
+    @GET("eu")
     //then create a function to call the api from the web and populate the list
     fun getCountries(): Call<OceaniaCountry>
 }
