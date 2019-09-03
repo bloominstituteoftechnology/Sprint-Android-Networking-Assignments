@@ -14,7 +14,7 @@ interface OceaniaCountriesAPI {
 
     //TODO 5 get the last position of the url
 
-    @GET("<https://restcountries.eu/#api-endpoints-all>")
+    @GET("<https://restcountries.eu/rest/v2/regionalbloc/eu>")
     //then create a function to call the api from the web and populate the list
     fun getCountries(): Call<OceaniaCountry>
 }
