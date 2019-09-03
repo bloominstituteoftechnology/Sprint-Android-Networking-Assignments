@@ -1,6 +1,7 @@
 package com.example.rescountry.interfaces
 
-import com.example.rescountry.models.Countries
+
+import com.example.rescountry.models.OceaniaCountryList
 import retrofit2.Call
 import retrofit2.http.GET
 
@@ -12,7 +13,7 @@ interface OceaniaCountriesAPI {
 
     @GET("<https://restcountries.eu/#api-endpoints-all/>")
     //then create a function to call the api from the web and populate the list
-    fun getCountries(): Call<Countries.OceaniaCountryList>
+    fun getCountries(): Call<OceaniaCountryList>
 }
 
 
