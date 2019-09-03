@@ -3,8 +3,9 @@ package com.example.rescountry
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.rescountry.models.OceaniaCountry
 
-import com.example.rescountry.models.OceaniaCountryList
+
 import com.example.rescountry.retrofeit.OceaniaCountriesReceiver
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
@@ -16,10 +17,10 @@ import retrofit2.Response
 
 
 class MainActivity : AppCompatActivity(),
-    Callback<OceaniaCountryList> {
+    Callback<OceaniaCountry> {
     override fun onResponse(
-        call: Call<OceaniaCountryList>,
-        response: Response<OceaniaCountryList>
+        call: Call<OceaniaCountry>,
+        response: Response<OceaniaCountry>
     ) {
         if (response.isSuccessful) {
             val oceaniaCountryList = response.body()
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity(),
         }
     }
 
-    override fun onFailure(call: Call<OceaniaCountryList>, t: Throwable) {
+    override fun onFailure(call: Call<OceaniaCountry>, t: Throwable) {
         t.printStackTrace()
         val response = "faliure; ${t.printStackTrace()}"
 

@@ -1,8 +1,9 @@
 package com.example.rescountry.retrofeit
 
 import com.example.rescountry.interfaces.OceaniaCountriesAPI
+import com.example.rescountry.models.OceaniaCountry
 
-import com.example.rescountry.models.OceaniaCountryList
+
 import com.google.gson.GsonBuilder
 import retrofit2.Call
 import retrofit2.Retrofit
@@ -10,12 +11,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class OceaniaCountriesReceiver {
     companion object{
-        const val BASE_URL = "https://restcountries.eu/#api-endpoints-all/"
+        const val BASE_URL = "https://restcountries.eu/#api-endpoints-all"
     }
 
 
     // TODO 7 create a fun to parse the list
-    fun getCountries(): Call<OceaniaCountryList> {
+    fun getCountries(): Call<OceaniaCountry> {
         val gson = GsonBuilder()
             .setLenient()
             .create()
