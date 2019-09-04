@@ -24,6 +24,9 @@ interface JsonPlaceHolderAPI {
     @POST("employees")
     fun addNewEmployee(@Body employee: Employee) : Call<Employee>
 
+    // TODO put
+    @PUT("employees")
+    fun updateEmployee(@Body employee: Employee) : Call<Employee>
 
     // TODO create factory class
 
