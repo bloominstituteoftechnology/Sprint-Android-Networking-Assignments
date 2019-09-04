@@ -47,12 +47,16 @@ class GetActivity : AppCompatActivity(), Callback<List<Employee>> {
          getEmployeesById("1")
       } else {
           title = "GET - Query Parameter: Age - 55"
-  //          getEmployees("55")
+            getEmployeeByAge("55")
        }
 
 
 
     }
+    fun getEmployeeByAge(age: String){
+        employeeService.getEmployeeByAge(age).enqueue(this)
+    }
+
     fun getEmployeesById(employeeId: String){
         employeeService.getEmployeesById(employeeId).enqueue(this)
     }
