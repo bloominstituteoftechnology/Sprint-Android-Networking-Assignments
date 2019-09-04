@@ -20,10 +20,12 @@ class GetPickerActivity : AppCompatActivity() {
         }
         pathParamsButton.setOnClickListener {
             val intent = Intent(this, GetActivity::class.java)
+            intent.putExtra("get", "path")
             startActivity(intent)
         }
         queryButton.setOnClickListener {
             val intent = Intent(this, GetActivity::class.java)
+            intent.putExtra("get", "query")
             startActivity(intent)
         }
 

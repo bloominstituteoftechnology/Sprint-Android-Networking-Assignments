@@ -44,7 +44,7 @@ class GetActivity : AppCompatActivity(), Callback<List<Employee>> {
 
      } else if (type == "path") {
            title = "GET - Path Parameter: EmployeeId - 1"
-  //         getEmployees("1")
+         getEmployeesById("1")
       } else {
           title = "GET - Query Parameter: Age - 55"
   //          getEmployees("55")
@@ -53,9 +53,12 @@ class GetActivity : AppCompatActivity(), Callback<List<Employee>> {
 
 
     }
+    fun getEmployeesById(employeeId: String){
+        employeeService.getEmployeesById(employeeId).enqueue(this)
+    }
 
 
-        fun getEmployees() {
+    fun getEmployees() {
             employeeService.getEmployees().enqueue(object: Callback<List<Employee>>{
                 override fun onFailure(call: Call<List<Employee>>, t: Throwable) {
                     Toast.makeText(this@GetActivity, "Failure, change the code!", Toast.LENGTH_LONG).show()
