@@ -31,6 +31,7 @@ class GetActivity : AppCompatActivity(), Callback<List<Employee>> {
 
         // TODO 3: Create the api (retrofit)
         val gson = Gson()
+        employeeService = JsonPlaceHolderAPI.Factory.create()
         employeeService = Retrofit.Builder()
             .baseUrl(JsonPlaceHolderAPI.Factory.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())

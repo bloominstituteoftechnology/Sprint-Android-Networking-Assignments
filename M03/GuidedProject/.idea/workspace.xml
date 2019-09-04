@@ -54,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/retrofit/JsonPlaceHolderApi.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-624">
-              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="158">
+              <caret line="48" column="21" selection-start-line="47" selection-start-column="12" selection-end-line="57" selection-end-column="9" />
               <folding>
                 <element signature="e#50#288#0" expanded="true" />
               </folding>
@@ -84,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpGetActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+            <state relative-caret-position="107">
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="27" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -358,13 +358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpDeleteActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -372,6 +365,13 @@
         </state>
       </provider>
       <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpDeleteActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/GetPickerActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
@@ -382,8 +382,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/retrofit/JsonPlaceHolderApi.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-624">
-          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="158">
+          <caret line="48" column="21" selection-start-line="47" selection-start-column="12" selection-end-line="57" selection-end-column="9" />
           <folding>
             <element signature="e#50#288#0" expanded="true" />
           </folding>
@@ -392,8 +392,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpGetActivity.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        <state relative-caret-position="107">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="27" selection-end-column="51" />
         </state>
       </provider>
     </entry>
