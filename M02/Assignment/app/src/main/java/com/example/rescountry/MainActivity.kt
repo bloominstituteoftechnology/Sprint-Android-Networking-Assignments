@@ -26,7 +26,10 @@ class MainActivity : AppCompatActivity(),
     ) {
         if (response.isSuccessful) {
             val oceaniaCountryList = response.body()
-            countriesTextView.text = oceaniaCountryList.toString() // use "oceaniaCountryList" to populate this TextView
+        //    countriesTextView.text = oceaniaCountryList.toString() // use "oceaniaCountryList" to populate this TextView
+            for(element in oceaniaCountryList!!) {
+                countriesTextView.append(element.capital + ", ")
+            }
         } else {
             val response = "response not successful; ${response.errorBody().toString()}"
 
