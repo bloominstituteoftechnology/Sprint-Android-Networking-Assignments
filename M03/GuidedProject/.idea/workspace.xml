@@ -6,31 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f728ac4f-56f7-472b-b9c2-b2368ba8d5a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/activity/DeleteActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/activity/GetActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/activity/GetPickerActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/activity/PostActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/activity/PutActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/model/Employee.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/retrofit/Factory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/retrofit/JsonPlaceHolderAPI.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_delete.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_get.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_get_picker.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_post.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_put.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/httpoperation/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpDeleteActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpDeleteActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpGetActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpGetActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpPostActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpPostActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpPutActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/HttpPutActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/model/Employee.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/model/Employee.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/retrofit/JsonPlaceHolderApi.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/lambdaschool/httpoperations/retrofit/JsonPlaceHolderApi.kt" afterDir="false" />
-    </list>
+    <list default="true" id="f728ac4f-56f7-472b-b9c2-b2368ba8d5a0" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,8 +104,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="448" />
-    <option name="y" value="62" />
+    <option name="x" value="387" />
+    <option name="y" value="32" />
     <option name="width" value="1540" />
     <option name="height" value="1055" />
   </component>
@@ -192,6 +168,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../MainAcitivity" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
@@ -285,7 +262,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="359" y="50" width="1232" height="844" extended-state="0" />
+    <frame x="310" y="26" width="1232" height="844" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.17832765" />
