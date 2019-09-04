@@ -14,9 +14,11 @@ class DeleteActivity : AppCompatActivity(), Callback<Void> {
     }
 
     override fun onResponse(call: Call<Void>, response: Response<Void>) {
-        response.body().let {
-            Toast.makeText(this@DeleteActivity, it.toString(), Toast.LENGTH_LONG)
-                .show()
+        if (response.isSuccessful){
+            Toast.makeText(this@DeleteActivity, "Deletion was Successful", Toast.LENGTH_LONG).show()
+        }else{
+            Toast.makeText(this@DeleteActivity, "Deletion was NOT Successful", Toast.LENGTH_LONG).show()
+
         }
     }
 
