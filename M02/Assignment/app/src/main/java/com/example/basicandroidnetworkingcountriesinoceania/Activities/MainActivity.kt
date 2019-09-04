@@ -35,7 +35,10 @@ class MainActivity : AppCompatActivity(), Callback<List<OceaniaCountry>> {
     ) {
         if (response.isSuccessful) {
             val oceaniaCountryList = response.body()
-            countriesTextView.text = "" // use "oceaniaCountryList" to populate this TextView
+            for (i in 0 until oceaniaCountryList!!.size) {
+                countriesTextView.append(oceaniaCountryList[i].subregion.toString()+", ")
+
+            }// use "oceaniaCountryList" to populate this TextView
         } else {
             val response = "response not successful: ${response.errorBody().toString()}"
             Toast.makeText(this@MainActivity, response, Toast.LENGTH_SHORT).show()
