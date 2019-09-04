@@ -28,6 +28,11 @@ interface JsonPlaceHolderAPI {
     @PUT("employees")
     fun updateEmployee(@Body employee: Employee) : Call<Employee>
 
+    //TODO delete
+    @DELETE("employees/{id}")
+    fun deleteEmployee(@Path("id") id: String) : Call<Void>
+
+
     // TODO create factory class
 
     class Factory {
