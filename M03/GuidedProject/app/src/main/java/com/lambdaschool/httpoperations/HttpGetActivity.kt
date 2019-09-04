@@ -12,6 +12,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class HttpGetActivity : AppCompatActivity(), Callback<List<Employee>> {
 
     // extracted retrofit variable from retrofit API
+
     lateinit var employeeService: JsonPlaceHolderApi
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,10 +39,13 @@ class HttpGetActivity : AppCompatActivity(), Callback<List<Employee>> {
             title = "GET - Query Parameter: Age - 55"
             getEmployeesByAge("55")
         }
-    }
 
-    fun getEmployees() {
-        // TODO 4: Write the call for getting all employees (SIMPLE REQUEST)
+    }
+        fun getEmployees() {
+            // TODO 4: Write the call for getting all employees (SIMPLE REQUEST)
+            employeeService.getEmployees().enqueue(this)
+
+        }
 
         fun getEmployees(employeeId: String) {
             // TODO: Write the call to get an employee by id
@@ -53,14 +57,15 @@ class HttpGetActivity : AppCompatActivity(), Callback<List<Employee>> {
             employeeService.getEmployeesByAge(age).enqueue(this)
         }
 
+        override fun onFailure(call: Call<List<Employee>>, t: Throwable) {
+            Toast.makeText(this@HttpGetActivity, "Failure", Toast.LENGTH_LONG).show()
+        }
+
+        override fun onResponse(call: Call<List<Employee>>, response: Response<List<Employee>>) {
+            Toast.makeText(this@HttpGetActivity, "Pass", Toast.LENGTH_LONG).show()
+        }
+    }
 
 
-    }
-    override fun onFailure(call: Call<List<Employee>>, t: Throwable) {
-        Toast.makeText(this@HttpGetActivity, "Failure", Toast.LENGTH_LONG).show()
-    }
 
-    override fun onResponse(call: Call<List<Employee>>, response: Response<List<Employee>>) {
-        Toast.makeText(this@HttpGetActivity, "Pass", Toast.LENGTH_LONG).show()
-    }
-}
+

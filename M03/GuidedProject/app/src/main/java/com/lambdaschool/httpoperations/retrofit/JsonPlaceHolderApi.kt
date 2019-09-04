@@ -14,11 +14,12 @@ interface JsonPlaceHolderApi {
     // TODO 2: Create API for different endpoints
 
     // create different endpoints
-    @GET("employees/{id}")
-    fun getEmployees(@Path("id") employeeId: String) : Call<List<Employee>>
-
     @GET("employees")
     fun getEmployees(): Call<List<Employee>>
+
+
+    @GET("employees/{id}")
+    fun getEmployees(@Path("id") employeeId: String) : Call<List<Employee>>
 
     @GET("employees")
     fun getEmployeesByAge(@Query("age")employeeId: String) : Call<List<Employee>>

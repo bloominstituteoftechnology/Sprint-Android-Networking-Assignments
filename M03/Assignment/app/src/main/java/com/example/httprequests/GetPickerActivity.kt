@@ -12,8 +12,11 @@ class GetPickerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_get_picker)
 
         simplegetButton.setOnClickListener {
-            val intent = Intent(this, GetActivity::class.java)
-            startActivity(intent)
+          val intent = Intent(this@GetPickerActivity, GetActivity::class.java)
+
+            intent.putExtra("get", "simple")
+           startActivity(intent)
+
         }
         pathParamsButton.setOnClickListener {
             val intent = Intent(this, GetActivity::class.java)
@@ -23,6 +26,8 @@ class GetPickerActivity : AppCompatActivity() {
             val intent = Intent(this, GetActivity::class.java)
             startActivity(intent)
         }
+
+
 
     }
 }
