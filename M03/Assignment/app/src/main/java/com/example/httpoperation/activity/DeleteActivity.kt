@@ -1,14 +1,16 @@
-package com.lambdaschool.httpoperations
+package com.example.httpoperation.activity
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.lambdaschool.httpoperations.retrofit.JsonPlaceHolderApi
+import com.example.httpoperation.R
+import com.example.httpoperation.retrofit.Factory
+import com.example.httpoperation.retrofit.JsonPlaceHolderAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class HttpDeleteActivity : AppCompatActivity(), Callback<Void> {
+class DeleteActivity : AppCompatActivity(), Callback<Void> {
     override fun onFailure(call: Call<Void>, t: Throwable) {
     }
 
@@ -20,14 +22,14 @@ class HttpDeleteActivity : AppCompatActivity(), Callback<Void> {
         }
     }
 
-    lateinit var employeesService: JsonPlaceHolderApi
+    lateinit var employeesService: JsonPlaceHolderAPI
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_http_get)
-        title = "Delete Request: Delete existing employee with id 1"
+        setContentView(R.layout.activity_get)
+        title = "Delete Request: Delete existing employee Steve, id 1"
 
-        employeesService = JsonPlaceHolderApi.Factory.create()
+        employeesService = Factory.create()
         deleteEmployee()
     }
 

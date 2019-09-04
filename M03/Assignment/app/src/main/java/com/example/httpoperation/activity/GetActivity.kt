@@ -1,39 +1,38 @@
-package com.lambdaschool.httpoperations
+package com.example.httpoperation.activity
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import com.google.gson.Gson
-import com.lambdaschool.httpoperations.model.Employee
-import com.lambdaschool.httpoperations.retrofit.JsonPlaceHolderApi
+import com.example.httpoperation.R
+import com.example.httpoperation.model.Employee
+import com.example.httpoperation.retrofit.Factory
+import com.example.httpoperation.retrofit.JsonPlaceHolderAPI
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
-class HttpGetActivity : AppCompatActivity(), Callback<List<Employee>> {
+class GetActivity : AppCompatActivity(), Callback<List<Employee>> {
 
-    lateinit var employeesService: JsonPlaceHolderApi
+    lateinit var employeesService: JsonPlaceHolderAPI
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_http_get)
+        setContentView(R.layout.activity_get)
 
         // TODO: Create the api
-        employeesService = JsonPlaceHolderApi.Factory.create()
+        employeesService = Factory.create()
 
         val type = intent.getStringExtra("get")
         if (type == "simple") {
             title = "GET - Simple Request"
             getEmployees()
         } else if (type == "path") {
-            title = "GET - Path Parameter: EmployeeId - 1"
-            getEmployeesById("1")
+            title = "GET - Path Parameter: EmployeeId - 2"
+            getEmployeesById("2")
         }
         else{
-            title = "GET - Query Parameter: Age - 55"
-            getEmployeesByAge("55")
+            title = "GET - Query Parameter: Age - 45"
+            getEmployeesByAge("45")
         }
     }
 
@@ -53,7 +52,7 @@ class HttpGetActivity : AppCompatActivity(), Callback<List<Employee>> {
     }
 
     override fun onFailure(call: Call<List<Employee>>, t: Throwable) {
-        Toast.makeText(this@HttpGetActivity,"Failed", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this@GetActivity,"Failed", Toast.LENGTH_SHORT).show()
     }
 
     override fun onResponse(
@@ -61,6 +60,6 @@ class HttpGetActivity : AppCompatActivity(), Callback<List<Employee>> {
         response: Response<List<Employee>>
     ) {
         response.body()?.let{
-            Toast.makeText(this@HttpGetActivity, it.toString(), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this@GetActivity, it.toString(), Toast.LENGTH_SHORT).show()
         }}
 }

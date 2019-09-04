@@ -4,50 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activity.GetPickerActivity">
 
     <Button
-        android:id="@+id/get"
+        android:id="@+id/simple_get_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="GET"
-        app:layout_constraintBottom_toTopOf="@+id/post"
+        android:text="Simple GET call"
+        app:layout_constraintBottom_toTopOf="@+id/path_get_call"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/post"
+        android:id="@+id/path_get_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="POST"
-        app:layout_constraintBottom_toTopOf="@+id/put"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658" />
-
-    <Button
-        android:id="@+id/put"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PUT"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606" />
-
-    <Button
-        android:id="@+id/delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DELETE"
+        android:text="GET call with path"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/put" />
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/query_get_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET call with query"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/path_get_call" />
 </androidx.constraintlayout.widget.ConstraintLayout>
