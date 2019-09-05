@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a634154-8a83-48d5-a69f-75abb7e05adf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Assignment/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/androidTest/java/com/example/networkingassignment3/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/networkingassignment3/DeleteActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/networkingassignment3/GetActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/networkingassignment3/GetPickerActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/networkingassignment3/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/networkingassignment3/PostActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/java/com/example/networkingassignment3/PutActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_get.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_get_picker.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/app/src/test/java/com/example/networkingassignment3/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Assignment/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../M01_Threading/Assignment/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../M01_Threading/Assignment/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2a634154-8a83-48d5-a69f-75abb7e05adf" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,7 +273,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.3295302" />
       <window_info id="Structure" side_tool="true" />
