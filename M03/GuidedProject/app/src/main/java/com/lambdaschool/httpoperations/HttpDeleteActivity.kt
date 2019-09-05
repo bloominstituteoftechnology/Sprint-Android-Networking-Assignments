@@ -10,10 +10,13 @@ class HttpDeleteActivity : AppCompatActivity() {
         setContentView(R.layout.activity_http_get)
         title = "Delete Request: Delete existing employee with id 1"
 
+
+
         deleteEmployee()
     }
 
     private fun deleteEmployee(){
-        // TODO: delete the employee
+        // TODO 8: delete the employee
+        employeesService.deleteEmployee("id").enqueue(this)
     }
 }

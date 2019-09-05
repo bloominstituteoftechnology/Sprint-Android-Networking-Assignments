@@ -28,9 +28,7 @@ object NetworkAdapter {
             connection = url.openConnection() as HttpURLConnection
             connection.readTimeout = TIMEOUT
             connection.connectTimeout = TIMEOUT
-
             connection.connect()
-
             if (connection.responseCode == HttpURLConnection.HTTP_OK) {
                 stream = connection.inputStream
                 if (stream != null) {
@@ -41,21 +39,18 @@ object NetworkAdapter {
                     }
                 }
             }
-
         } catch (e: MalformedURLException) {
             e.printStackTrace()
         } catch (e: IOException) {
             e.printStackTrace()
         } finally {
             connection?.disconnect()
-
             if (stream != null) {
                 try {
                     stream.close()
                 } catch (e: IOException) {
                     e.printStackTrace()
                 }
-
             }
         }
         return result
