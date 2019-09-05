@@ -6,7 +6,6 @@ import android.net.ConnectivityManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import androidx.core.content.getSystemService
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         get_btn.setOnClickListener {
             if(isConnected()) {
-                val intent = Intent(this, GetActivity::class.java)
+                val intent = Intent(this, GetPickerActivity::class.java)
                 startActivity(intent)
             } else{
                 toast.show()
