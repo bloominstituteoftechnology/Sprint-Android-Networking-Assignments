@@ -52,6 +52,9 @@ class LargeImageDownloadService: Service(){
     companion object{
         const val FILE_DOWNLOADED_ACTION = "com.lambdaschool.serviceimagedownloader.FILE_DOWNLOADED"
         const val DOWNLOADED_IMAGE = "downloaded image"
+        const val BITMAP_HEIGHT = "height"
+        const val BITMAP_WIDTH = "width"
+
     }
 
 }
